@@ -81,9 +81,11 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
       
       <header className="text-center pt-24 sm:pt-16 pb-8">
         <div className="mb-6 flex justify-center">
-            <div className="shine-effect rounded-3xl p-4 sm:p-5 inline-block">
-                <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-16 sm:h-20 w-auto" />
-            </div>
+            <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="inline-block" aria-label="Ir para o Instagram da InteligenciArte.IA">
+                <div className="shine-effect rounded-3xl p-4 sm:p-5 inline-block">
+                    <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-16 sm:h-20 w-auto" />
+                </div>
+            </a>
         </div>
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-[var(--text-primary)] mb-4">
             Planos e Soluções Digitais
@@ -119,7 +121,9 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
         
         <div className={`relative z-50 w-full max-w-xs h-full bg-[var(--card-bg)] border-r border-[var(--border-color)] shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'}`}>
           <div className="flex items-center justify-between p-6 border-b border-[var(--border-color)]">
-              <img src="/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
+              <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" aria-label="Ir para o Instagram da InteligenciArte.IA">
+                <img src="/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
+              </a>
               <button
                   onClick={() => setIsMenuOpen(false)}
                   className="p-2 rounded-full text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]"
