@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
       
       <header className="text-center pt-24 sm:pt-16 pb-8">
         <div className="mb-6 flex justify-center">
-            <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-32 sm:h-40 w-auto" />
+            <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-24 sm:h-32 w-auto" />
         </div>
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-[var(--text-primary)] mb-4">
             Planos e Soluções Digitais
