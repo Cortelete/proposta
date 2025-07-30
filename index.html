@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InteligenciArte.IA - Soluções Digitais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.min.js"></script>
+    <style>
+      :root {
+        --bg-start: #0d1117;
+        --bg-mid: #161b22;
+        --bg-end: #010409;
+        --card-bg: rgba(26, 26, 26, 0.7);
+        --text-primary: #E0E0E0;
+        --text-secondary: #8b949e;
+        --border-color: #30363d;
+        --gold-text: #FFD369;
+        --backdrop-bg: rgba(10, 10, 10, 0.7);
+      }
+
+      body.light-theme {
+        --bg-start: #f0f2f5;
+        --bg-mid: #ffffff;
+        --bg-end: #e9ebee;
+        --card-bg: rgba(255, 255, 255, 0.7);
+        --text-primary: #1c1e21;
+        --text-secondary: #606770;
+        --border-color: #dddfe2;
+        --gold-text: #d4a017;
+        --backdrop-bg: rgba(255, 255, 255, 0.7);
+      }
+      
+      @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, var(--bg-start), var(--bg-mid), var(--bg-end));
+        background-size: 400% 400%;
+        animation: gradientAnimation 20s ease infinite;
+        color: var(--text-primary);
+        scroll-behavior: smooth;
+        transition: background 0.5s ease, color 0.5s ease;
+      }
+      .shine-effect {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        backdrop-filter: blur(10px);
+      }
+      .shine-effect::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          110deg,
+          rgba(255, 255, 255, 0) 40%,
+          rgba(255, 255, 255, 0.1) 50%,
+          rgba(255, 255, 255, 0) 60%
+        );
+        transform: skewX(-25deg);
+        transition: left 0.75s;
+      }
+      .shine-effect:hover::before {
+        left: 150%;
+      }
+      .gold-text {
+        color: var(--gold-text);
+      }
+      .recharts-responsive-container {
+        font-size: 12px;
+      }
+      .recharts-text.recharts-label,
+      .recharts-cartesian-axis-tick-value {
+        fill: var(--text-secondary);
+      }
+      .recharts-legend-item-text {
+        color: var(--text-primary) !important;
+      }
+      /* Scrollbar Styles */
+      ::-webkit-scrollbar {
+        width: 12px;
+        background-color: var(--bg-start);
+      }
+      ::-webkit-scrollbar-track {
+        background-color: var(--bg-start);
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: var(--border-color);
+        border-radius: 10px;
+        border: 3px solid var(--bg-start);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--gold-text);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
