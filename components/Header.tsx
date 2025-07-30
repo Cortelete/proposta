@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
           </button>
       </div>
       
-      <header className="text-center pt-24 sm:pt-16 pb-8">
+      <header className="text-center pt-50 sm:pt-16 pb-8">
         <div className="mb-6 flex justify-center">
             <img src="/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-16 sm:h-20 w-auto" />
         </div>
