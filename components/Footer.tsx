@@ -69,7 +69,7 @@ const Footer: React.FC<FooterProps> = ({ onWhatsAppClick }) => {
           <div className="text-center md:text-left">
             <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="inline-block" aria-label="Ir para o Instagram da InteligenciArte.IA">
               <div className="shine-effect rounded-2xl p-3 inline-block">
-                <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
+                <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-10 w-auto" />
               </div>
             </a>
             <p className="text-[var(--text-secondary)] mt-4 max-w-xs mx-auto md:mx-0">Criando soluções com inteligência e design.</p>
