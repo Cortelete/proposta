@@ -79,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
       
       <header className="text-center pt-24 sm:pt-16 pb-8">
         <div className="mb-4 flex justify-center">
-            <img src="public/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-10 w-auto" />
+            <img src="/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-10 w-auto" />
         </div>
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-[var(--text-primary)] mb-4">
             Planos e Soluções Digitais
@@ -115,7 +115,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
         
         <div className={`relative z-50 w-full max-w-xs h-full bg-[var(--card-bg)] border-r border-[var(--border-color)] shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'}`}>
           <div className="flex items-center justify-between p-6 border-b border-[var(--border-color)]">
-              <img src="public/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-8 w-auto" />
+              <img src="/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-8 w-auto" />
               <button
                   onClick={() => setIsMenuOpen(false)}
                   className="p-2 rounded-full text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]"
