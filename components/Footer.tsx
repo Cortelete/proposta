@@ -67,8 +67,10 @@ const Footer: React.FC<FooterProps> = ({ onWhatsAppClick }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Col 1: Brand Info */}
           <div className="text-center md:text-left">
-            <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto mx-auto md:mx-0" />
-            <p className="text-[var(--text-secondary)] mt-2 max-w-xs mx-auto md:mx-0">Criando soluções com inteligência e design.</p>
+            <div className="shine-effect rounded-2xl p-3 inline-block">
+              <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
+            </div>
+            <p className="text-[var(--text-secondary)] mt-4 max-w-xs mx-auto md:mx-0">Criando soluções com inteligência e design.</p>
           </div>
 
           {/* Col 2: Quick Links */}
