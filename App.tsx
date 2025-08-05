@@ -293,6 +293,7 @@ const App: React.FC = () => {
                     <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Logotipo Profissional</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Criação de um logotipo exclusivo e memorável para representar sua marca.</p>
                     <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">a partir de R$ 500,00</p>
+                    <p className="text-xs text-[var(--text-secondary)] mt-4">Clique para saber mais</p>
                 </button>
                 <button
                     onClick={() => openModal(aiAgentModalContent(handleWhatsAppClick))}
@@ -302,6 +303,7 @@ const App: React.FC = () => {
                     <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Agente de IA Personalizado</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Desenvolvemos um assistente de IA para automações complexas e personalizadas.</p>
                     <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">a partir de R$ 1.500,00</p>
+                    <p className="text-xs text-[var(--text-secondary)] mt-4">Clique para saber mais</p>
                 </button>
                  <button
                     onClick={() => openModal(consultancyModalContent(handleWhatsAppClick))}
@@ -311,6 +313,7 @@ const App: React.FC = () => {
                     <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Consultoria Digital</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Sessões estratégicas para destravar o potencial do seu negócio online.</p>
                     <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">R$ 550 / hora</p>
+                    <p className="text-xs text-[var(--text-secondary)] mt-4">Clique para saber mais</p>
                 </button>
                 <button
                     onClick={() => openModal(societyModalContent(handleWhatsAppClick))}
@@ -320,6 +323,7 @@ const App: React.FC = () => {
                     <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Opção de Sociedade</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Oferecemos nossos serviços em troca de participação no seu negócio. Ideal para projetos promissores.</p>
                     <p className="text-lg font-bold text-green-400">Conversar sobre Parceria</p>
+                    <p className="text-xs text-[var(--text-secondary)] mt-4">Clique para saber mais</p>
                 </button>
             </div>
         </section>
@@ -340,6 +344,7 @@ const App: React.FC = () => {
                         <p className="text-[var(--text-secondary)] mb-4 flex-grow text-center">{automation.description}</p>
                         <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">{automation.price}</p>
                         <p className="text-sm text-[var(--text-secondary)]">Setup + <span className="font-semibold">{automation.recurrence}</span> de manutenção*</p>
+                        <p className="text-xs text-[var(--text-secondary)] mt-4">Clique para ver os detalhes</p>
                     </button>
                 ))}
             </div>
@@ -356,6 +361,7 @@ const App: React.FC = () => {
                 >
                     <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)] title-hover">5 Artes Extras Aleatórias</h3>
                     <p className="text-[var(--text-secondary)]">Válidas por até 1 ano, podem ser solicitadas com 5 dias de antecedência (mediante disponibilidade).</p>
+                    <p className="text-xs text-[var(--text-secondary)] mt-4 font-semibold opacity-70">Clique para saber mais</p>
                 </button>
                  <button
                     onClick={() => openModal(backendModalContent)}
@@ -363,6 +369,7 @@ const App: React.FC = () => {
                 >
                     <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)] title-hover">Início Seguro do Back-end</h3>
                     <p className="text-[var(--text-secondary)]">Estrutura inicial com segurança reforçada e acessos internos para sua tranquilidade.</p>
+                    <p className="text-xs text-[var(--text-secondary)] mt-4 font-semibold opacity-70">Clique para saber mais</p>
                 </button>
                 <button
                     onClick={() => openModal(descontoModalContent)}
@@ -375,6 +382,7 @@ const App: React.FC = () => {
                         <li>Contratando 2 planos, o segundo sai por <span className="text-green-400 font-bold">R$600,00</span>.</li>
                         <li className="text-sm italic">Desconto mantido na recorrência por 3 meses. Após, aplica-se taxa de manutenção.</li>
                     </ul>
+                    <p className="text-xs text-[var(--text-secondary)] mt-4 font-semibold opacity-70">Clique para saber mais</p>
                 </button>
             </div>
         </section>

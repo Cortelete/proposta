@@ -26,6 +26,8 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, onShowDetailsClick, onWhatsAp
         </div>
       </div>
 
+      <p className="text-center text-xs text-[var(--text-secondary)] mb-4 mt-2">Clique para ver os detalhes</p>
+
       <button
         onClick={(e) => {
             e.stopPropagation();
