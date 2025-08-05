@@ -86,10 +86,10 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
                 <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-16 sm:h-20 w-auto" />
             </div>
         </div>
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-[var(--text-primary)] mb-4">
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-[var(--text-primary)] mb-4 title-hover cursor-default">
             Planos e Soluções Digitais
         </h1>
-        <p className="text-lg sm:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto mb-8 px-4">
+        <p className="text-lg sm:text-xl text-[var(--text-secondary)] max-w-2xl mx-auto mb-8 px-4 title-hover cursor-default">
             Soluções completas para impulsionar seu negócio no mundo digital.
         </p>
 

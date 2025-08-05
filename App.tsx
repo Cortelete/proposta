@@ -244,8 +244,8 @@ const App: React.FC = () => {
        <Header theme={theme} toggleTheme={toggleTheme} onWhatsAppClick={handleWhatsAppClick} />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <section className="text-center my-12 sm:my-16">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--text-primary)] mb-4">Escolha a Parceria Ideal para sua Jornada Digital</h2>
-            <p className="text-base sm:text-lg text-[var(--text-secondary)] max-w-3xl mx-auto">Nossos planos são cumulativos e desenhados para acompanhar cada etapa do seu crescimento, do lançamento à expansão.</p>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--text-primary)] mb-4 title-hover cursor-default">Escolha a Parceria Ideal para sua Jornada Digital</h2>
+            <p className="text-base sm:text-lg text-[var(--text-secondary)] max-w-3xl mx-auto title-hover cursor-default">Nossos planos são cumulativos e desenhados para acompanhar cada etapa do seu crescimento, do lançamento à expansão.</p>
         </section>
 
         <section id="plans" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-4">
@@ -275,15 +275,15 @@ const App: React.FC = () => {
         </div>
 
         <section id="add-ons" className="mb-16 sm:mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[var(--text-primary)]">Serviços Adicionais</h2>
-            <p className="text-center text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto text-base sm:text-lg">Potencialize sua marca com nossos serviços especializados, que podem ser contratados de forma avulsa ou como parte de uma parceria estratégica.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[var(--text-primary)] title-hover cursor-default">Serviços Adicionais</h2>
+            <p className="text-center text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto text-base sm:text-lg title-hover cursor-default">Potencialize sua marca com nossos serviços especializados, que podem ser contratados de forma avulsa ou como parte de uma parceria estratégica.</p>
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
                 <button
                     onClick={() => openModal(logoModalContent(handleWhatsAppClick))}
                     className="shine-effect rounded-3xl p-6 md:p-8 text-left flex flex-col items-center w-full h-full hover:border-[var(--gold-text)] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-[var(--gold-text)]"
                 >
                     <PenToolIcon className="w-12 h-12 mb-4 text-[#85E3F2]" />
-                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)]">Logotipo Profissional</h3>
+                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Logotipo Profissional</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Criação de um logotipo exclusivo e memorável para representar sua marca.</p>
                     <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">a partir de R$ 500,00</p>
                 </button>
@@ -292,7 +292,7 @@ const App: React.FC = () => {
                     className="shine-effect rounded-3xl p-6 md:p-8 text-left flex flex-col items-center w-full h-full hover:border-[var(--gold-text)] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-[var(--gold-text)]"
                 >
                     <BrainIcon className="w-12 h-12 mb-4 text-[#FFD369]" />
-                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)]">Agente de IA Personalizado</h3>
+                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Agente de IA Personalizado</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Desenvolvemos um assistente de IA para automações complexas e personalizadas.</p>
                     <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">a partir de R$ 1.500,00</p>
                 </button>
@@ -301,7 +301,7 @@ const App: React.FC = () => {
                     className="shine-effect rounded-3xl p-6 md:p-8 text-left flex flex-col items-center w-full h-full hover:border-[var(--gold-text)] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-[var(--gold-text)]"
                 >
                     <ConsultancyIcon className="w-12 h-12 mb-4 text-[#a7d129]" />
-                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)]">Consultoria Digital</h3>
+                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Consultoria Digital</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Sessões estratégicas para destravar o potencial do seu negócio online.</p>
                     <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">R$ 550 / hora</p>
                 </button>
@@ -310,7 +310,7 @@ const App: React.FC = () => {
                     className="shine-effect rounded-3xl p-6 md:p-8 text-left flex flex-col items-center w-full h-full hover:border-[var(--gold-text)] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-[var(--gold-text)]"
                >
                     <HandshakeIcon className="w-12 h-12 mb-4 text-[#F7AFC7]" />
-                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)]">Opção de Sociedade</h3>
+                    <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">Opção de Sociedade</h3>
                     <p className="text-[var(--text-secondary)] text-center mb-4 flex-grow">Oferecemos nossos serviços em troca de participação no seu negócio. Ideal para projetos promissores.</p>
                     <p className="text-lg font-bold text-green-400">Conversar sobre Parceria</p>
                 </button>
@@ -318,8 +318,8 @@ const App: React.FC = () => {
         </section>
 
         <section id="automations" className="mb-16 sm:mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[var(--text-primary)]">Nossas Automações Inteligentes</h2>
-            <p className="text-center text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto text-base sm:text-lg">Otimize seu tempo e melhore o atendimento com nossas soluções de automação. Cada serviço pode ser contratado individualmente.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[var(--text-primary)] title-hover cursor-default">Nossas Automações Inteligentes</h2>
+            <p className="text-center text-[var(--text-secondary)] mb-10 max-w-2xl mx-auto text-base sm:text-lg title-hover cursor-default">Otimize seu tempo e melhore o atendimento com nossas soluções de automação. Cada serviço pode ser contratado individualmente.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {AUTOMATIONS_DATA.map((automation, index) => (
                     <button 
@@ -329,7 +329,7 @@ const App: React.FC = () => {
                         disabled={!automation.getDetails}
                     >
                         <automation.Icon className="w-12 h-12 mb-4" style={{ color: automation.color }} />
-                        <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)]">{automation.title}</h3>
+                        <h3 className="text-xl font-bold mb-2 text-center text-[var(--text-primary)] title-hover">{automation.title}</h3>
                         <p className="text-[var(--text-secondary)] mb-4 flex-grow text-center">{automation.description}</p>
                         <p className="text-xl sm:text-2xl font-bold text-[var(--text-primary)]">{automation.price}</p>
                         <p className="text-sm text-[var(--text-secondary)]">Setup + <span className="font-semibold">{automation.recurrence}</span> de manutenção*</p>
@@ -341,27 +341,27 @@ const App: React.FC = () => {
 
         <section id="bonus" className="mb-16 sm:mb-20 bg-[var(--card-bg)] border border-[var(--border-color)] backdrop-blur-lg rounded-3xl p-6 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 gold-text">🌟 Benefícios Exclusivos para Membros Club.IA 🌟</h2>
-            <p className="text-center text-[var(--text-secondary)] mb-10 max-w-3xl mx-auto">Ao se tornar um membro do <span className="font-bold">Club.IA</span>, você desbloqueia vantagens e descontos únicos nos nossos serviços de automação e criação.</p>
+            <p className="text-center text-[var(--text-secondary)] mb-10 max-w-3xl mx-auto title-hover cursor-default">Ao se tornar um membro do <span className="font-bold">Club.IA</span>, você desbloqueia vantagens e descontos únicos nos nossos serviços de automação e criação.</p>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
                 <button
                     onClick={() => openModal(bonusArtesModalContent)}
                     className={clickableBenefitStyle}
                 >
-                    <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)]">5 Artes Extras Aleatórias</h3>
+                    <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)] title-hover">5 Artes Extras Aleatórias</h3>
                     <p className="text-[var(--text-secondary)]">Válidas por até 1 ano, podem ser solicitadas com 5 dias de antecedência (mediante disponibilidade).</p>
                 </button>
                  <button
                     onClick={() => openModal(backendModalContent)}
                     className={clickableBenefitStyle}
                 >
-                    <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)]">Início Seguro do Back-end</h3>
+                    <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)] title-hover">Início Seguro do Back-end</h3>
                     <p className="text-[var(--text-secondary)]">Estrutura inicial com segurança reforçada e acessos internos para sua tranquilidade.</p>
                 </button>
                 <button
                     onClick={() => openModal(descontoModalContent)}
                     className={`${clickableBenefitStyle} md:col-span-2`}
                 >
-                    <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)]">Desconto em Automações</h3>
+                    <h3 className="font-bold text-xl mb-2 text-[var(--text-primary)] title-hover">Desconto em Automações</h3>
                     <p className="text-[var(--text-secondary)] mb-4">Descontos especiais para membros nos serviços de automação listados acima:</p>
                     <ul className="space-y-2 list-inside list-disc text-[var(--text-secondary)]">
                         <li>Contratando 1 plano, a automação sai de <span className="line-through">R$1.350,00</span> por <span className="text-green-400 font-bold">R$800,00</span>.</li>

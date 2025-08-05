@@ -71,12 +71,12 @@ const Footer: React.FC<FooterProps> = ({ onWhatsAppClick }) => {
             <div className="shine-effect rounded-2xl p-3 inline-block">
               <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
             </div>
-            <p className="text-[var(--text-secondary)] mt-4 max-w-xs mx-auto md:mx-0">Criando soluções com inteligência e design.</p>
+            <p className="text-[var(--text-secondary)] mt-4 max-w-xs mx-auto md:mx-0 title-hover cursor-default">Criando soluções com inteligência e design.</p>
           </div>
 
           {/* Col 2: Quick Links */}
           <div className="text-center md:text-left">
-            <h4 className="font-bold text-[var(--text-primary)] mb-4 uppercase tracking-wider text-sm">Navegação</h4>
+            <h4 className="font-bold text-[var(--text-primary)] mb-4 uppercase tracking-wider text-sm title-hover cursor-default">Navegação</h4>
             <ul className="space-y-2">
               <li><a href="#plans" onClick={handleNavClick} className="text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors">Planos</a></li>
               <li><a href="#add-ons" onClick={handleNavClick} className="text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors">Serviços Adicionais</a></li>
@@ -87,7 +87,7 @@ const Footer: React.FC<FooterProps> = ({ onWhatsAppClick }) => {
 
           {/* Col 3: Contact */}
           <div className="text-center md:text-left">
-            <h4 className="font-bold text-[var(--text-primary)] mb-4 uppercase tracking-wider text-sm">Contato</h4>
+            <h4 className="font-bold text-[var(--text-primary)] mb-4 uppercase tracking-wider text-sm title-hover cursor-default">Contato</h4>
             <div className="flex justify-center md:justify-start items-center gap-4">
                 <button onClick={() => onWhatsAppClick(createWhatsAppLink("Olá, Davi! Encontrei seu contato no site e gostaria de conversar."))} aria-label="WhatsApp" className="shine-overlay p-2 rounded-full bg-white/5 text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors transform hover:scale-110">
                     <WhatsAppIcon className="w-7 h-7" />

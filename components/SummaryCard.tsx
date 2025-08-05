@@ -44,8 +44,8 @@ const SummaryCard: React.FC<SummaryCardProps> = ({ theme }) => {
 
   return (
     <section id="summary" className="shine-effect rounded-3xl p-6 md:p-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-[var(--text-primary)]">Resumo Estratégico & Projeções</h2>
-      <p className="text-center text-[var(--text-secondary)] mb-10 text-sm">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-[var(--text-primary)] title-hover cursor-default">Resumo Estratégico & Projeções</h2>
+      <p className="text-center text-[var(--text-secondary)] mb-10 text-sm title-hover cursor-default">
         <span className="font-bold">Aviso:</span> Todos os dados são simbólicos e servem apenas como estimativa potencial de crescimento.
       </p>
 
@@ -54,7 +54,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({ theme }) => {
             <div className="flex justify-center mb-4">
                 <ChartBarIcon className="w-10 h-10 text-green-400" />
             </div>
-            <h4 className="font-bold text-lg mb-2 text-[var(--text-primary)]">ROI Projetado</h4>
+            <h4 className="font-bold text-lg mb-2 text-[var(--text-primary)] title-hover">ROI Projetado</h4>
             <p className="text-4xl font-extrabold text-green-400 mb-2">+450%</p>
             <p className="text-sm text-[var(--text-secondary)]">O acompanhamento do <span className="font-semibold text-[var(--text-primary)]">Club.IA</span> visa multiplicar seu investimento em até 6 meses.</p>
         </div>
@@ -63,7 +63,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({ theme }) => {
              <div className="flex justify-center mb-4">
                 <BoltIcon className="w-10 h-10 text-yellow-400" />
             </div>
-            <h4 className="font-bold text-lg mb-2 text-[var(--text-primary)]">Aumento de Eficiência</h4>
+            <h4 className="font-bold text-lg mb-2 text-[var(--text-primary)] title-hover">Aumento de Eficiência</h4>
             <p className="text-4xl font-extrabold text-yellow-400 mb-2">+30%</p>
             <p className="text-sm text-[var(--text-secondary)]">Libere horas da sua equipe com automações e processos otimizados a partir do plano <span className="font-semibold text-[var(--text-primary)]">VIP</span>.</p>
         </div>
@@ -72,7 +72,7 @@ const SummaryCard: React.FC<SummaryCardProps> = ({ theme }) => {
              <div className="flex justify-center mb-4">
                 <UsersIcon className="w-10 h-10 text-blue-400" />
             </div>
-            <h4 className="font-bold text-lg mb-2 text-[var(--text-primary)]">Crescimento de Leads</h4>
+            <h4 className="font-bold text-lg mb-2 text-[var(--text-primary)] title-hover">Crescimento de Leads</h4>
             <p className="text-4xl font-extrabold text-blue-400 mb-2">+200%</p>
             <p className="text-sm text-[var(--text-secondary)]">Atraia clientes mais qualificados com as estratégias de SEO e conteúdo do <span className="font-semibold text-[var(--text-primary)]">Club.IA</span>.</p>
         </div>

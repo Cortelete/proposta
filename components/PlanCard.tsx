@@ -32,8 +32,8 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, onFeatureClick, onShowDetails
       style={{ '--plan-color': plan.color } as React.CSSProperties}
     >
       <div className="flex-grow">
-        <h3 className="text-xl sm:text-2xl font-bold mb-1" style={{ color: plan.color }}>{plan.title}</h3>
-        <p className="text-[var(--text-secondary)] mb-6">{plan.subtitle}</p>
+        <h3 className="text-xl sm:text-2xl font-bold mb-1 plan-title-hover" style={{ color: plan.color }}>{plan.title}</h3>
+        <p className="text-[var(--text-secondary)] mb-6 title-hover cursor-default">{plan.subtitle}</p>
 
         <div className="mb-8">
           <span className="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)]">{plan.price}</span>
