@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import PlanCard from './components/PlanCard';
 import SummaryCard from './components/SummaryCard';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
-import { PLANS_DATA, AUTOMATIONS_DATA, BrainIcon, PenToolIcon, HandshakeIcon, createWhatsAppLink, ConsultancyIcon } from './constants';
+import { PLANS_DATA, AUTOMATIONS_DATA, BrainIcon, PenToolIcon, HandshakeIcon, createWhatsAppLink, ConsultancyIcon, InfoIcon } from './constants';
 import type { ModalContent, Theme, Plan } from './types';
 
 const bonusArtesModalContent: ModalContent = {
@@ -228,6 +227,15 @@ const App: React.FC = () => {
                                 {feature.included ? <CheckIcon /> : <CrossIcon />}
                             </span>
                             <span className={`flex-1 ${feature.included ? 'text-[var(--text-primary)]' : 'text-gray-500 line-through'}`}>{feature.text}</span>
+                             {feature.details && (
+                                <button
+                                  onClick={() => openModal({ title: feature.text, content: feature.details })}
+                                  className="ml-2 p-1 rounded-full hover:bg-white/10 transition-colors"
+                                  aria-label={`Mais detalhes sobre ${feature.text}`}
+                                >
+                                  <InfoIcon className="w-4 h-4 text-gray-500 group-hover:text-[var(--text-primary)] transition-colors" />
+                                </button>
+                              )}
                         </li>
                     ))}
                 </ul>
@@ -253,7 +261,6 @@ const App: React.FC = () => {
             <PlanCard 
                 key={plan.title} 
                 plan={plan} 
-                onFeatureClick={(feature) => openModal({ title: feature.text, content: feature.details })}
                 onShowDetailsClick={() => handleShowPlanDetails(plan)}
                 onWhatsAppClick={handleWhatsAppClick}
                 className={PLANS_DATA.length === 3 && index === 2 ? "md:col-span-2 lg:col-span-1" : ""}
