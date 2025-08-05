@@ -166,6 +166,19 @@ const App: React.FC = () => {
     document.body.classList.add('dark-theme');
   }, []);
 
+  useEffect(() => {
+    const isModalOpen = activeModal || whatsAppUrlToConfirm;
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    // Cleanup on component unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [activeModal, whatsAppUrlToConfirm]);
+
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
