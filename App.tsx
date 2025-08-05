@@ -236,7 +236,7 @@ const App: React.FC = () => {
     });
   };
   
-  const clickableBenefitStyle = "bg-[var(--card-bg)]/50 p-6 rounded-xl border border-[var(--border-color)] text-left hover:border-[var(--gold-text)] hover:bg-[var(--card-bg)] transition-all w-full h-full focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]/50";
+  const clickableBenefitStyle = "shine-effect p-6 rounded-xl text-left hover:border-[var(--gold-text)] transition-all w-full h-full focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]/50";
 
 
   return (
@@ -339,7 +339,7 @@ const App: React.FC = () => {
              <p className="text-center text-xs text-[var(--text-secondary)] mt-4 max-w-2xl mx-auto">*Membros Club.IA têm isenção da taxa de manutenção por 3 meses. Consulte os detalhes nos benefícios.</p>
         </section>
 
-        <section id="bonus" className="mb-16 sm:mb-20 shine-effect rounded-3xl p-6 md:p-12">
+        <section id="bonus" className="mb-16 sm:mb-20 bg-[var(--card-bg)] border border-[var(--border-color)] backdrop-blur-lg rounded-3xl p-6 md:p-12">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 gold-text">🌟 Benefícios Exclusivos para Membros Club.IA 🌟</h2>
             <p className="text-center text-[var(--text-secondary)] mb-10 max-w-3xl mx-auto">Ao se tornar um membro do <span className="font-bold">Club.IA</span>, você desbloqueia vantagens e descontos únicos nos nossos serviços de automação e criação.</p>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
@@ -399,13 +399,13 @@ const App: React.FC = () => {
                 <div className="flex justify-center gap-4">
                     <button
                         onClick={handleCloseConfirmModal}
-                        className="py-2 px-6 rounded-lg bg-gray-500/20 text-[var(--text-secondary)] hover:bg-gray-500/40 transition-colors font-semibold"
+                        className="shine-overlay py-2 px-6 rounded-lg bg-gray-500/20 text-[var(--text-secondary)] hover:bg-gray-500/40 transition-colors font-semibold"
                     >
                         Cancelar
                     </button>
                     <button
                         onClick={handleConfirmRedirect}
-                        className="py-2 px-6 rounded-lg bg-green-500 text-white font-bold hover:bg-green-600 transition-colors"
+                        className="shine-overlay py-2 px-6 rounded-lg bg-green-500 text-white font-bold hover:bg-green-600 transition-colors"
                     >
                         Sim, continuar
                     </button>

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import type { Theme } from '../types';
 import { SunIcon, MoonIcon, WhatsAppIcon, InstagramIcon, createWhatsAppLink, INSTAGRAM_LINK, MenuIcon, MenuCloseIcon } from '../constants';
@@ -59,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
       <div className="fixed top-6 left-6 z-30">
           <button
               onClick={() => setIsMenuOpen(true)}
-              className="p-2 rounded-full bg-black/10 dark:bg-white/10 backdrop-blur-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]"
+              className="shine-overlay p-2 rounded-full bg-black/10 dark:bg-white/10 backdrop-blur-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]"
               aria-label="Abrir menu"
           >
               <MenuIcon className="w-6 h-6" />
@@ -69,7 +70,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
       <div className="fixed top-6 right-6 z-30">
           <button
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-black/10 dark:bg-white/10 backdrop-blur-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]"
+              className="shine-overlay p-2 rounded-full bg-black/10 dark:bg-white/10 backdrop-blur-sm text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]"
               aria-label="Toggle theme"
           >
               <div className="relative w-6 h-6">
@@ -81,11 +82,9 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
       
       <header className="text-center pt-24 sm:pt-16 pb-8">
         <div className="mb-6 flex justify-center">
-            <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="inline-block" aria-label="Ir para o Instagram da InteligenciArte.IA">
-                <div className="shine-effect rounded-3xl p-4 sm:p-5 inline-block">
-                    <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-16 sm:h-20 w-auto" />
-                </div>
-            </a>
+            <div className="shine-effect rounded-3xl p-4 sm:p-5 inline-block">
+                <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-16 sm:h-20 w-auto" />
+            </div>
         </div>
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-[var(--text-primary)] mb-4">
             Planos e Soluções Digitais
@@ -97,7 +96,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
         <div id="contact" className="flex flex-col sm:flex-row justify-center items-center gap-4 scroll-mt-24">
             <button 
                 onClick={() => onWhatsAppClick(createWhatsAppLink("Olá, Davi! Vi sua página de planos e gostaria de conversar."))}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 bg-green-500 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
+                className="shine-overlay w-full sm:w-auto flex items-center justify-center gap-2 bg-green-500 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
                 <WhatsAppIcon className="w-5 h-5" />
                 <span>Fale no WhatsApp</span>
@@ -106,7 +105,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
                 href={INSTAGRAM_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:scale-105 text-sm sm:text-base"
+                className="shine-overlay w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg hover:opacity-90 transition-opacity duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
                 <InstagramIcon className="w-5 h-5" />
                 <span>Siga no Instagram</span>
@@ -121,9 +120,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme, onWhatsAppClick }) 
         
         <div className={`relative z-50 w-full max-w-xs h-full bg-[var(--card-bg)] border-r border-[var(--border-color)] shadow-2xl flex flex-col transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-x-0' : 'transform -translate-x-full'}`}>
           <div className="flex items-center justify-between p-6 border-b border-[var(--border-color)]">
-              <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" aria-label="Ir para o Instagram da InteligenciArte.IA">
-                <img src="/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
-              </a>
+              <img src="/images/logoIA.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
               <button
                   onClick={() => setIsMenuOpen(false)}
                   className="p-2 rounded-full text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[var(--gold-text)]"

@@ -60,7 +60,11 @@
         border: 1px solid var(--border-color);
         backdrop-filter: blur(10px);
       }
-      .shine-effect::before {
+      .shine-overlay { /* New class for just the overlay */
+        position: relative;
+        overflow: hidden;
+      }
+      .shine-effect::before, .shine-overlay::before {
         content: '';
         position: absolute;
         top: 0;
@@ -70,13 +74,13 @@
         background: linear-gradient(
           110deg,
           rgba(255, 255, 255, 0) 40%,
-          rgba(255, 255, 255, 0.1) 50%,
+          rgba(255, 255, 255, 0.25) 50%,
           rgba(255, 255, 255, 0) 60%
         );
         transform: skewX(-25deg);
-        transition: left 0.75s;
+        transition: left 0.8s cubic-bezier(0.23, 1, 0.32, 1);
       }
-      .shine-effect:hover::before {
+      .shine-effect:hover::before, .shine-overlay:hover::before {
         left: 150%;
       }
       .gold-text {
@@ -119,7 +123,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { createWhatsAppLink, INSTAGRAM_LINK, WhatsAppIcon, InstagramIcon } from '../constants';
 
@@ -27,7 +28,7 @@ const BackToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 bg-[var(--gold-text)] text-gray-900 p-3 rounded-full shadow-lg hover:bg-yellow-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition-all duration-300 ${
+      className={`shine-overlay fixed bottom-6 right-6 bg-[var(--gold-text)] text-gray-900 p-3 rounded-full shadow-lg hover:bg-yellow-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition-all duration-300 ${
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
       aria-label="Voltar ao topo"
@@ -67,11 +68,9 @@ const Footer: React.FC<FooterProps> = ({ onWhatsAppClick }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Col 1: Brand Info */}
           <div className="text-center md:text-left">
-            <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="inline-block" aria-label="Ir para o Instagram da InteligenciArte.IA">
-              <div className="shine-effect rounded-2xl p-3 inline-block">
-                <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-10 w-auto" />
-              </div>
-            </a>
+            <div className="shine-effect rounded-2xl p-3 inline-block">
+              <img src="/images/logoIAl.png" alt="InteligenciArte.IA Logo" className="h-12 w-auto" />
+            </div>
             <p className="text-[var(--text-secondary)] mt-4 max-w-xs mx-auto md:mx-0">Criando soluções com inteligência e design.</p>
           </div>
 
@@ -89,14 +88,14 @@ const Footer: React.FC<FooterProps> = ({ onWhatsAppClick }) => {
           {/* Col 3: Contact */}
           <div className="text-center md:text-left">
             <h4 className="font-bold text-[var(--text-primary)] mb-4 uppercase tracking-wider text-sm">Contato</h4>
-            <div className="flex justify-center md:justify-start items-center gap-6">
-                <button onClick={() => onWhatsAppClick(createWhatsAppLink("Olá, Davi! Encontrei seu contato no site e gostaria de conversar."))} aria-label="WhatsApp" className="text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors transform hover:scale-110">
+            <div className="flex justify-center md:justify-start items-center gap-4">
+                <button onClick={() => onWhatsAppClick(createWhatsAppLink("Olá, Davi! Encontrei seu contato no site e gostaria de conversar."))} aria-label="WhatsApp" className="shine-overlay p-2 rounded-full bg-white/5 text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors transform hover:scale-110">
                     <WhatsAppIcon className="w-7 h-7" />
                 </button>
-                <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors transform hover:scale-110">
+                <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="shine-overlay p-2 rounded-full bg-white/5 text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors transform hover:scale-110">
                     <InstagramIcon className="w-7 h-7" />
                 </a>
-                <a href="mailto:contato@inteligenciarte.ia" aria-label="E-mail" className="text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors transform hover:scale-110">
+                <a href="mailto:contato@inteligenciarte.ia" aria-label="E-mail" className="shine-overlay p-2 rounded-full bg-white/5 text-[var(--text-secondary)] hover:text-[var(--gold-text)] transition-colors transform hover:scale-110">
                     <MailIcon className="w-7 h-7" />
                 </a>
             </div>

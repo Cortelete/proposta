@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { Plan } from '../types';
 import { createWhatsAppLink } from '../constants';
@@ -62,14 +63,14 @@ const PlanCard: React.FC<PlanCardProps> = ({ plan, onFeatureClick, onShowDetails
 
       <button 
         onClick={onShowDetailsClick}
-        className="block md:hidden w-full text-center text-base font-bold py-3 rounded-xl transition-all duration-300 ease-in-out bg-white/10 hover:bg-white/20 text-[var(--text-primary)] mb-4"
+        className="shine-overlay block md:hidden w-full text-center text-base font-bold py-3 rounded-xl transition-all duration-300 ease-in-out bg-white/10 hover:bg-white/20 text-[var(--text-primary)] mb-4"
       >
         Ver Detalhes
       </button>
 
       <button
         onClick={() => onWhatsAppClick(createWhatsAppLink(`Olá, Davi! Tenho interesse em contratar o ${plan.title}. Poderíamos conversar sobre os próximos passos?`))}
-        className="block w-full text-center text-base sm:text-lg font-bold py-3 rounded-xl transition-all duration-300 ease-in-out text-gray-900 hover:scale-105"
+        className="shine-overlay block w-full text-center text-base sm:text-lg font-bold py-3 rounded-xl transition-all duration-300 ease-in-out text-gray-900 hover:scale-105"
         style={{ backgroundColor: plan.color, boxShadow: `0 4px 20px -5px ${plan.color}80` }}
       >
         Contratar Agora
